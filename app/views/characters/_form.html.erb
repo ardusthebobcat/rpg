@@ -1,0 +1,13 @@
+<%= form_for @character do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.radio_button :type, "wizard" %>
+  <%= f.label :type, "Wizard" %>
+  <%= f.radio_button :type, "thief" %>
+  <%= f.label :type, "Thief" %>
+  <%= f.radio_button :type, "fighter" %>
+  <%= f.label :type, "Fighter"%>
+
+  <%= f.submit %>
+<% end %>
